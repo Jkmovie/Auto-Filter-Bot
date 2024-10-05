@@ -34,7 +34,7 @@ if len(BOT_TOKEN) == 0:
 PORT = int(environ.get('PORT', '80'))
 
 # Bot pics
-PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
+PICS = (environ.get('PICS', 'https://i.postimg.cc/W1S0gJVZ/IMG-20240805-190236.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
 
 # Bot Admins
 ADMINS = environ.get('ADMINS', '6644473960')
@@ -87,8 +87,8 @@ LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'hindi en
 QUALITY = [quality.lower() for quality in environ.get('QUALITY', '360p 480p 720p 1080p 2160p').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdiskshortner.link")
-SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915443501")
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "https://publicearn.com")
+SHORTLINK_API = environ.get("SHORTLINK_API", "00f5e05110acb50871ba945c10f5a19ec62c22a2")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
@@ -108,8 +108,8 @@ SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 SHORTLINK = is_enabled('SHORTLINK', False)
 
 #premium info
-PAYMENT_QR = environ.get('PAYMENT_QR', 'http://graph.org/file/cacbbea472e5a48ce0d64.jpg')
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'sampleupi@upi')
+PAYMENT_QR = environ.get('PAYMENT_QR', 'https://i.postimg.cc/XYdrdQNy/IMG-20240805-190251.jpg')
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'gpay-11249788752@okbizaxis')
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True)
