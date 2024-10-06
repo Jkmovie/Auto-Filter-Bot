@@ -80,7 +80,7 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/updater_jk")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/updater_jk/2")
 
 # Bot settings
-DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
+DELETE_TIME = int(environ.get('DELETE_TIME', 600)) # Add time in seconds
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 MAX_BTN = int(environ.get('MAX_BTN', 10))
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'hindi english telugu tamil kannada malayalam marathi punjabi').split()]
@@ -97,14 +97,14 @@ PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '600'))
 # boolean settings
 IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-AUTO_DELETE = is_enabled('AUTO_DELETE', False)
-WELCOME = is_enabled('WELCOME', False)
+AUTO_DELETE = is_enabled('AUTO_DELETE', True)
+WELCOME = is_enabled('WELCOME', True)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
-LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
+LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", True)
 LINK_MODE = is_enabled("LINK_MODE", True)
-AUTO_FILTER = is_enabled('AUTO_FILTER', False)
-IMDB = is_enabled('IMDB', False)
-SPELL_CHECK = is_enabled("SPELL_CHECK", False)
+AUTO_FILTER = is_enabled('AUTO_FILTER', True)
+IMDB = is_enabled('IMDB', True)
+SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 SHORTLINK = is_enabled('SHORTLINK', False)
 
 #premium info
